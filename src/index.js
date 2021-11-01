@@ -70,9 +70,6 @@ export default class Embed {
       throw Error('Embed Tool data should be object');
     }
 
-    console.log(data);
-
-
     const { service, source, embed, width, height, caption = '' } = data;
 
     this._data = {
@@ -128,7 +125,6 @@ export default class Embed {
    * @returns {HTMLElement}
    */
   render() {
-    console.log('hoge');
     if (!this.data.service) {
       const container = document.createElement('div');
 
