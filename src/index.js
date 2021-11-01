@@ -155,7 +155,7 @@ export default class Embed {
     const embedIsReady = this.embedIsReady(container);
 
     container.appendChild(template.content.firstChild);
-    if (!this.readOnly && this.data.caption) {
+    if (!this.readOnly || this.data.caption) {
       container.appendChild(caption);
     }
 
