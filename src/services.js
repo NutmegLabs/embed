@@ -160,4 +160,11 @@ export default {
     height: 300,
     width: 600,
   },
+  googlemaps: {
+    regex: /(?:<iframe\ssrc=[\"]?)?(?:http[s]?:\/\/)?(?:www.)?google\.com\/maps\/embed\?pb=([^\/\?\&\"]+)(?:.+<\/iframe>)?/,
+    embedUrl: 'https://www.google.com/maps/embed?pb=<%= remote_id %>',
+    html: '<iframe width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+    height: 300,
+    width: 600,
+  },
 };
